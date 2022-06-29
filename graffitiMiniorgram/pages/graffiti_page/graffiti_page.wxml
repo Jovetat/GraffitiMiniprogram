@@ -1,0 +1,41 @@
+<!--pages/graffiti_page/graffiti_page.wxml-->
+<view>
+    <canvas id="graffitiCanvas" canvas-id="graffitiCanvas" type="2d" class="graffiti-canvas"
+        style="width: 690rpx; height: 450px;"
+        disable-scroll="false"
+        bindtouchstart="touchStart"
+        bindtouchmove="touchMove"
+        bindtouchend="touchEnd"
+    />
+</view>
+<view class="lineWidth-view toolbar-view">
+    <text class="lineWidth-text text-color">笔触大小</text>
+    <slider id="lineSlider" class="lineWidth-slider" bindchange="lineWidthBindChange" show-value="true"
+         min="{{minThickness}}" max="{{maxThickness}}" block-size="16" value="{{thickness}}" block-color="{{color}}"
+         activeColor="{{color}}">
+    </slider>
+</view>
+
+<view class="color-view toolbar-view">
+    <scroll-view scroll-x="true" class="color-scroll" enhanced="true" show-scrollbar="true" fast-deceleration="true">
+        <block wx:for="{{colorArr}}" wx:key="index">
+            <view class="color-block" style="background-color: {{item}};"
+             bindtap="colorBindChange" data-col="{{item}}">
+            </view>
+        </block>
+    </scroll-view>
+</view>
+<view class="tool-view toolbar-view">
+    <view style="border-right: 1px solid #E6E6E6;" bindtap="withdrawBindtap">
+        <image src="/image/revoke_icon.png" class="icon-img" mode="aspectFit"></image>
+        <text class="icon-text">撤销</text>
+    </view>
+    <view bindtap="colorBindChange" data-col="#FFFFFF" style="border-right: 1px solid #E6E6E6;">
+        <image src="/image/rubber_icon.png" class="icon-img" mode="aspectFit" data-col="#FFFFFF"></image>
+        <text class="icon-text" data-col="#FFFFFF">橡皮</text>
+    </view>
+    <view bindtap="clearCanvas">
+        <image src="/image/clear_icon.png" class="icon-img" mode="aspectFit"></image>
+        <text class="icon-text">清除</text>
+    </view>
+</view>

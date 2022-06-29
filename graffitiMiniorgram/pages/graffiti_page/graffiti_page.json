@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#EEF6FE",
+  "lazyCodeLoading": "requiredComponents"
+}

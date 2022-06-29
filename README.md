@@ -1,1 +1,4 @@
-# GraffitiMiniprogram
+# 涂鸦板微信小程序，JavaScript
+### 基本功能
+#### 调整画笔颜色、画笔大小、撤销、清除画布、橡皮擦功能 (canvas)
+	通过栈存储绘画信息实现撤销

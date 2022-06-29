@@ -1,0 +1,78 @@
+/* pages/graffiti_page/graffiti_page.wxss */
+
+page{
+    background-color: #EEF6FE;
+}
+.graffiti-canvas{
+    background-color: white;
+    margin: 20rpx 30rpx;
+    border-radius: 10px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),		/* 拟态 */
+				-2px -2px 12px rgba(255, 255, 255, 0.5),
+				inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+				2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.lineWidth-slider{
+    width: 400rpx;
+
+}
+.lineWidth-view{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.lineWidth-text{
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.text-color{
+    color: rgba(44, 44, 44, 0.822);
+}
+.toolbar-view{
+    margin: 20rpx 30rpx;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),		/* 拟态 */
+				-2px -2px 12px rgba(255, 255, 255, 0.5),
+				inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+				2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.color-block{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 6px;
+    display: inline-block;
+}
+.color-scroll{
+    width: 600rpx;
+    padding: 5px;
+    white-space: nowrap;
+}
+.color-view{
+    display: flex;
+    justify-content: center;
+}
+.tool-view{
+    display: flex;
+    justify-content: center;
+    height: 35px;
+}
+.tool-view view{
+    width: 100px;
+    height: 35px;
+    align-items: center;
+}
+.icon-img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.icon-text{
+    line-height: 35px;
+    font-size: 15px;
+    margin: 0px 5px;
+}
